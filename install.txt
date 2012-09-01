@@ -1,0 +1,12 @@
+Mach's Twitter BBCode
+
+Install:
+
+Upload the contents of the 'upload' folder, leaving the folder structure intact.
+Import the file inside the 'import' folder through AdminCP > Plugins & Products > Manage Products > Add/Import Product
+
+Copy this to the bottom of your headinclude template:
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Usage:
+[tweet]twitter id here[/tweet]

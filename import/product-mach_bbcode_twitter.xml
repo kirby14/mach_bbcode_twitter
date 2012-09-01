@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<product productid="mach_bbcode_twitter" active="1">
+	<title><![CDATA[Mach's Twitter BBCode]]></title>
+	<description><![CDATA[give the ability to generate a twitter bbcode display. Simply use [tweet]twitter id here[/tweet].]]></description>
+	<version>0.0.1</version>
+	<url>http://www.tingusers.com</url>
+	<versioncheckurl />
+	<dependencies>
+		<dependency dependencytype="vbulletin" minversion="3.7.0" maxversion="" />
+	</dependencies>
+	<codes>
+	</codes>
+	<templates>
+	</templates>
+	<plugins>
+		<plugin active="1" executionorder="5">
+			<title>Strip tag in previews etc</title>
+			<hookname>strip_bbcode</hookname>
+			<phpcode><![CDATA[
+require_once DIR . '/mach/bbcode_twitter/plugins/strip_bbcode.php';
+            ]]></phpcode>
+		</plugin>
+		<plugin active="1" executionorder="5">
+			<title>Creation of the tag itself in the bbcodecache</title>
+			<hookname>bbcode_create</hookname>
+			<phpcode><![CDATA[
+require_once DIR . '/mach/bbcode_twitter/plugins/bbcode_create.php';
+]]></phpcode>
+		</plugin>
+		<plugin active="1" executionorder="5">
+			<title>fetch proper bbcode tags</title>
+			<hookname>bbcode_fetch_tags</hookname>
+			<phpcode><![CDATA[
+require_once DIR . '/mach/bbcode_twitter/plugins/bbcode_fetch_tags.php';
+]]></phpcode>
+		</plugin>
+	</plugins>
+	<phrases>
+	</phrases>
+	<options>
+	</options>
+	<helptopics>
+	</helptopics>
+	<cronentries>
+	</cronentries>
+	<faqentries>
+	</faqentries>
+</product>
