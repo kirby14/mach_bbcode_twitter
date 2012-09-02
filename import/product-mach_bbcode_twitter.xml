@@ -3,7 +3,7 @@
 <product productid="mach_bbcode_twitter" active="1">
 	<title><![CDATA[Mach's Twitter BBCode]]></title>
 	<description><![CDATA[give the ability to generate a twitter bbcode display. Simply use [tweet]twitter id here[/tweet].]]></description>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<url>http://www.tingusers.com</url>
 	<versioncheckurl />
 	<dependencies>
